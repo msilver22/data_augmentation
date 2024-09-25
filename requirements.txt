@@ -1,3 +1,7 @@
 pytorch-lightning
 lightning
 torchvision
+pandas
+torch
+torchmetrics
+scikit-learn
