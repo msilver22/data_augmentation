@@ -52,7 +52,7 @@ class Discriminator(nn.Module):
         return self.model(x)
 
 
-class GAN(L.LightningModule):
+class GAN_fmnist(L.LightningModule):
     def __init__(
         self,
         latent_dim: int = 100,
