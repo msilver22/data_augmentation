@@ -25,8 +25,8 @@ In addition, in the folder *"tabular_data_aug"* we explore several augmentation 
       │   │   ├── vae_fashion_mnist.py 
       │   │   ├── cvae_mnist.py 
       │   │   └── cvae_fashion_mnist.py  
-      │   ├── main_gan.py/   
-      │   ├── main_vae.py/  
+      │   ├── main_gan.py   
+      │   ├── main_vae.py  
       │   └── utils/                  
       │       └── visualization.py  
       │
