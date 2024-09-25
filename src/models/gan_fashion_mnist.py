@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import lightning as L
+import numpy as np
 
 class Generator(nn.Module):
     def __init__(self, in_features=100, out_features=784):
