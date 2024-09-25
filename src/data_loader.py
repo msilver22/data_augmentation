@@ -1,3 +1,8 @@
+import torchvision
+import torchvision.transforms as transforms
+from torch.utils.data import DataLoader, random_split
+from torchvision import datasets
+
 class FashionMNISTDataModule(L.LightningDataModule):
     def __init__(self, data_dir: str = PATH_DATASETS, batch_size: int = BATCH_SIZE, num_workers: int = NUM_WORKERS):
         super().__init__()
