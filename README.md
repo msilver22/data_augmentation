@@ -2,7 +2,7 @@
 
 This repository explores various data augmentation techniques and image generation models, such as **GAN**, **WGAN**, **CGAN**, **VAE**, and **CVAE** using datasets like **MNIST** and **FashionMNIST**. 
 It includes Jupyter notebooks with step-by-step implementations and reusable source code to facilitate exploration and understanding of augmentation techniques.
-In addition, in the folder *"tabular_data_aug"* we explore several augmentation tecniques, such as **SMOTE**, **CT-GAN**, **T-VAE** and **GReaT**.
+In addition, in the folder *"tabular_data_aug"* we explore several augmentation tecniques for tabular data, such as **SMOTE**, **CT-GAN**, **T-VAE** and **GReaT**.
 
 ## Repository Structure
 
