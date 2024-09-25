@@ -3,7 +3,7 @@ from torch import nn
 import torchmetrics
 import pytorch_lightning as pl
 
-class clf_MLP(pl.LightningModule):
+class MLP_classifier(pl.LightningModule):
     def __init__(self, input_dim=8, alpha=1):
         super(clf_MLP, self,).__init__()
 
