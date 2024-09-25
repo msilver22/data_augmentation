@@ -29,17 +29,18 @@ It includes Jupyter notebooks with step-by-step implementations and reusable sou
       │   └── utils/                  
       │       └── visualization.py  
       │
-      ├── data???/                    
-      │   ├── logo_sapienza.png     
-      │   │── MNIST/                
-      │   └── FashionMNIST  
-      │
       ├── photos/
       │   ├── Sapienza_logos/    
       │   ├── gan/            
       │   ├── wgan/ 
       │   ├── cgan/ 
-      │   └── vae/           
+      │   └── vae/  
+      │
+      │
+      ├── tabular_data_aug/                    
+      │   ├── notebooks/     
+      │   │── src              
+      │   └── photos  
       │
       ├── .gitignore                
       ├── README.md                 
