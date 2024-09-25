@@ -49,7 +49,7 @@ def main(model_name='cgan', dataset_name='mnist', latent_dim=100, epochs=100):
     torch.save(model.generator.state_dict(), 'generator_weights_final.pth')
     print("[LOG] Generator weights saved.")
 
-    # Plot the loss curves
+    # Plot the loss functions
     d_losses = model.d_losses
     g_losses = model.g_losses
     plot_epochs = range(0, len(g_losses))
@@ -65,21 +65,24 @@ def main(model_name='cgan', dataset_name='mnist', latent_dim=100, epochs=100):
     plt.show()
 
     # Load the trained generator
-    g = Generator(latent_dim=latent_dim)
+    g = Generator()
     g.load_state_dict(torch.load('generator_weights_final.pth'))
     g.eval()
 
     # Generate images
     if model_name == 'gan' or model_name == 'wgan':
-    z = torch.randn(100, latent_dim)  # 100 latent vectors
-    labels = Variable(torch.LongTensor([i for _ in range(10) for i in range(10)]))  # Example labels
-    fake_images = g(z, labels)
-    fake_images = fake_images.view(100, 1, 28, 28).detach()
-
-    # Display generated images
+        z = np.random.uniform(-1, 1, size=(100, 100))
+        z = torch.from_numpy(z).float()
+        fake_images = g(z)
+        fake_images = fake_images.view(100, 1, 28, 28).detach()
+    elif model_name =='cgan':
+        z = torch.randn(100,100)
+        labels = Variable(torch.LongTensor([i for _ in range(10) for i in range(10)]))
+        fake_images = g(z,labels)
+        fake_images = fake_images.view(100, 1, 28, 28).detach()
+        
+    #Visualize images    
     display_images(fake_images, n_cols=10)
 
-# Entry point for the script
 if __name__ == '__main__':
-    # Here you can pass parameters dynamically, for example:
     main(model_name='cgan', dataset_name='mnist', latent_dim=100, epochs=70)
