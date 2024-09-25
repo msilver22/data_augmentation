@@ -8,7 +8,7 @@ It includes Jupyter notebooks with step-by-step implementations and reusable sou
       data_augmentation/ 
       │
       ├── notebooks/                
-      │   ├── basic_image_augmentation_logo_sapienza.ipynb    
+      │   ├── Logo_sapienza_augmentation.ipynb    
       │   ├── gan_mnist_training.ipynb                        
       │
       ├── src/                      
