@@ -39,8 +39,9 @@ It includes Jupyter notebooks with step-by-step implementations and reusable sou
       │
       ├── tabular_data_aug/                    
       │   ├── notebooks/     
-      │   │── src              
-      │   └── photos  
+      │   │── src/    
+      │   │── photos/    
+      │   └── README.md  
       │
       ├── .gitignore                
       ├── README.md                 
