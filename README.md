@@ -34,9 +34,11 @@ It includes Jupyter notebooks with step-by-step implementations and reusable sou
       │
       ├── photos/
       │   ├── Sapienza_logos/    
-      │   ├── gan_mnist/            
-      │   ├── wgan_fashionmnist/   
-      │   └── vae_mnist/           
+      │   ├── gan/            
+      │   ├── wgan/ 
+      │   ├── cgan/ 
+      │   ├── vae/ 
+      │   └── cvae/           
       │
       ├── .gitignore                
       ├── README.md                 
