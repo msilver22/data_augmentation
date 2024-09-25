@@ -9,7 +9,7 @@ It includes Jupyter notebooks with step-by-step implementations and reusable sou
       │
       ├── notebooks/                
       │   ├── Logo_sapienza_augmentation.ipynb    
-      │   ├── gan_mnist_training.ipynb                        
+      │   ├── gan_mnist.ipynb                        
       │
       ├── src/                      
       │   ├── data_loader.py        
