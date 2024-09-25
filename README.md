@@ -3,20 +3,20 @@
 data_augmentation/
 │
 ├── notebooks/               
-│   ├── basic_image_augmentation_logo_sapienza.ipynb    # Basic image augmentation su logo Sapienza
-│   ├── gan_mnist_training.ipynb                        # GAN per MNIST
+│   ├── basic_image_augmentation_logo_sapienza.ipynb    
+│   ├── gan_mnist_training.ipynb                        
 │
-├── src/                      # Codice sorgente riutilizzabile
+├── src/                      
 │   ├── data_loader.py         # Funzioni per caricare dataset
 │   ├── models/                # Modelli di machine learning
 │   │   ├── gan.py             # Definizione GAN
 │   │   ├── wgan.py            # Definizione WGAN
 │   │   ├── cgan.py            # Definizione CGAN
-│   │   ├── vae.py             # Definizione VAE
-│   │   └── cvae.py            # Definizione CVAE
-│   └── utils/                 # Funzioni di utilità (per augmentazione o altro)
-│       ├── augmentation.py    # Funzioni per image augmentation
-│       └── visualization.py   # Funzioni per visualizzazione risultati
+│   │   ├── vae.py             
+│   │   └── cvae.py            
+│   └── utils/                 
+│       ├── augmentation.py    
+│       └── visualization.py   
 │
 ├── data/                     # Dati o modelli pre-addestrati (se non troppo pesanti)
 │   ├── logo_sapienza.png      # Logo di Sapienza usato per image augmentation
