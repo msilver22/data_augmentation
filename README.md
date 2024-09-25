@@ -37,8 +37,7 @@ It includes Jupyter notebooks with step-by-step implementations and reusable sou
       │   ├── gan/            
       │   ├── wgan/ 
       │   ├── cgan/ 
-      │   ├── vae/ 
-      │   └── cvae/           
+      │   └── vae/           
       │
       ├── .gitignore                
       ├── README.md                 
