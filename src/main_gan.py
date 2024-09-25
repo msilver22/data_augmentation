@@ -26,10 +26,13 @@ def choose_model(model_name,dataset_name):
     elif model_name == 'cgan' and dataset_name=='mnist':
         from models.cgan_mnist import CGAN_mnist, Generator
         return CGAN_mnist()
+    elif model_name == 'cgan' and dataset_name=='fmnist':
+        from models.cgan_fashion_mnist import CGAN_fmnist, Generator
+        return CGAN_mnist()
     else:
         raise ValueError(f"Unknown model or dataset: {model_name}, {dataset_name}")
 
-def main(model_name='cgan', dataset_name='mnist', latent_dim=100, epochs=70):
+def main(model_name='cgan', dataset_name='mnist', latent_dim=100, epochs=100):
     # Load the chosen data module and model
     dm = choose_data_module(dataset_name)
     model = choose_model(model_name)
@@ -67,6 +70,7 @@ def main(model_name='cgan', dataset_name='mnist', latent_dim=100, epochs=70):
     g.eval()
 
     # Generate images
+    if model_name == 'gan' or model_name == 'wgan':
     z = torch.randn(100, latent_dim)  # 100 latent vectors
     labels = Variable(torch.LongTensor([i for _ in range(10) for i in range(10)]))  # Example labels
     fake_images = g(z, labels)
