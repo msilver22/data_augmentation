@@ -38,9 +38,15 @@ In addition, in the folder *"tabular_data_aug"* we explore several augmentation 
       │   └── vae/  
       │
       │
-      ├── tabular_data_aug/                    
-      │   ├── notebooks/     
-      │   │── src/    
+      ├── tabular_data_aug/                       
+      │   │── src/ 
+      │   │   ├── data_loader.py        
+      │   │   ├── models/
+      │   │   │   └── mlp_classifier.py/  
+      │   │   ├── main_SMOTE.py 
+      │   │   ├── main_CTGAN.py 
+      │   │   ├── main_TVAE.py 
+      │   │   └── main_GREAT.py 
       │   │── photos/    
       │   └── README.md  
       │
