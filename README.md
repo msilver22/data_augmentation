@@ -15,8 +15,9 @@ It includes Jupyter notebooks with step-by-step implementations and reusable sou
       ├── src/                      
       │   ├── data_loader.py        
       │   ├── models/                
-      │   │   ├── gan.py             
-      │   │   ├── wgan.py           
+      │   │   ├── gan_mnist.py  
+      │   │   ├── gan_fashion_mnist.py   
+      │   │   ├── wgan_fashion_mnist.py           
       │   │   ├── cgan.py            
       │   │   ├── vae.py            
       │   │   └── cvae.py           
