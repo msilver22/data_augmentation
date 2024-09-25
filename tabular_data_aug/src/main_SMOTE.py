@@ -20,6 +20,8 @@ CATEGORICAL_COLS = ['60+', 'ASA', 'PEPSINOGENO 1 <30', 'AB PC', 'AB TPO', 'A-FLO
 TARGET_COL = 'LESIONI FOLLOW UP'  # Target column name
 TEST_SIZE = 0.2  # Proportion of the dataset to include in the test split
 N_RUNS = 10  # Number of training runs
+AUGMENTATION_SIZE = {0:500 , 1:350} #Example of augmentation size for binary classification
+RANDOM_SEED = 22
 
 def main():
     # Load dataset
@@ -45,10 +47,10 @@ def main():
     y = df[TARGET_COL]
 
     # Train/test split
-    X_train_real, X_test, y_train_real, y_test = train_test_split(X, y, test_size=TEST_SIZE, random_state=42)
+    X_train_real, X_test, y_train_real, y_test = train_test_split(X, y, test_size=TEST_SIZE, random_state=RANDOM_SEED)
 
     # Oversampling the minority class using SMOTENC (handle categorical/continuous feature)
-    smote = SMOTENC(categorical_features=[features.index(col) for col in CATEGORICAL_COLS], sampling_strategy='auto', k_neighbors=3, random_state=22)
+    smote = SMOTENC(categorical_features=[features.index(col) for col in CATEGORICAL_COLS], sampling_strategy=AUGMENTATION_SIZE, k_neighbors=3, random_state=RANDOM_SEED)
     X_train_resampled, y_train_resampled = smote.fit_resample(X_train_real, y_train_real)
 
     # Data normalization
