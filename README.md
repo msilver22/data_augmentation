@@ -46,8 +46,7 @@ In addition, in the folder *"tabular_data_aug"* we explore several augmentation 
       │   │   ├── main_SMOTE.py 
       │   │   ├── main_CTGAN.py 
       │   │   ├── main_TVAE.py 
-      │   │   └── main_GREAT.py 
-      │   │── photos/    
+      │   │   └── main_GREAT.py  
       │   └── README.md  
       │
       ├── .gitignore                
