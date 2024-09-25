@@ -4,7 +4,7 @@ import torchmetrics
 import pytorch_lightning as pl
 
 class clf_MLP(pl.LightningModule):
-    def __init__(self, input_dim=8, alpha=10):
+    def __init__(self, input_dim=8, alpha=1):
         super(clf_MLP, self,).__init__()
 
         self.alpha=alpha
