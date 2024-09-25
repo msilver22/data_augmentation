@@ -35,6 +35,7 @@ It includes Jupyter notebooks with step-by-step implementations and reusable sou
       │   ├── wgan_fashionmnist/   
       │   └── vae_mnist/           
       │
-      ├── .gitignore                # File to ignore unnecessary data or output
-      └──README.md                 # Main project documentation
+      ├── .gitignore                
+      ├── README.md                 
+      └── requirements.txt                 
 
