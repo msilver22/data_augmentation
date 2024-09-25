@@ -5,3 +5,4 @@ pandas
 torch
 torchmetrics
 scikit-learn
+imblearn
