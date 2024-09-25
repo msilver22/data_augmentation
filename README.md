@@ -20,8 +20,7 @@ It includes Jupyter notebooks with step-by-step implementations and reusable sou
       │   │   ├── cgan.py            
       │   │   ├── vae.py            
       │   │   └── cvae.py           
-      │   └── utils/                 
-      │       ├── augmentation.py   
+      │   └── utils/                  
       │       └── visualization.py  
       │
       ├── data/                    
