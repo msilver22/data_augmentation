@@ -18,9 +18,12 @@ It includes Jupyter notebooks with step-by-step implementations and reusable sou
       │   │   ├── gan_mnist.py  
       │   │   ├── gan_fashion_mnist.py   
       │   │   ├── wgan_fashion_mnist.py           
-      │   │   ├── cgan.py            
-      │   │   ├── vae.py            
-      │   │   └── cvae.py           
+      │   │   ├── cgan_mnist.py   
+      │   │   ├── cgan_fashion_mnist.py  
+      │   │   ├── vae_mnist.py 
+      │   │   ├── vae_fashion_mnist.py 
+      │   │   ├── cvae_mnist.py 
+      │   │   └── cvae_fashion_mnist.py           
       │   └── utils/                  
       │       └── visualization.py  
       │
