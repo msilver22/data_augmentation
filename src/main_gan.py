@@ -35,7 +35,7 @@ def choose_model(model_name,dataset_name):
 def main(model_name='cgan', dataset_name='mnist', latent_dim=100, epochs=100):
     # Load the chosen data module and model
     dm = choose_data_module(dataset_name)
-    model = choose_model(model_name)
+    model = choose_model(model_name, dataset_name)
 
     # Set up the trainer
     trainer = L.Trainer(
