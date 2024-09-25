@@ -3,6 +3,13 @@ import torch.nn as nn
 import lightning as L
 import numpy as np
 
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+print(f'Using device: {device}')
+BATCH_SIZE = 64
+NUM_WORKERS = int(os.cpu_count() / 2)
+print(f'Number of workers: {NUM_WORKERS}')
+PATH_DATASETS = os.environ.get("PATH_DATASETS", ".")
+
 class Generator(nn.Module):
     def __init__(self, in_features=100, out_features=784):
         super().__init__()
