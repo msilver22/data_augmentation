@@ -1,3 +1,7 @@
+import torch
+import torch.nn as nn
+import lightning as L
+
 class Generator(nn.Module):
     def __init__(self, in_features=100, out_features=784):
         super().__init__()
