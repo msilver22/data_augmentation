@@ -28,7 +28,8 @@ It includes Jupyter notebooks with step-by-step implementations and reusable sou
       │   │── MNIST/                
       │   └── FashionMNIST  
       │
-      ├── results/                  
+      ├── photos/
+      │   ├── Sapienza_logos/    
       │   ├── gan_mnist/            
       │   ├── wgan_fashionmnist/   
       │   └── vae_mnist/           
