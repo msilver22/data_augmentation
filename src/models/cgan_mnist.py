@@ -62,7 +62,7 @@ class Generator(nn.Module):
         return out.squeeze()
 
 
-class CGAN(L.LightningModule):
+class CGAN_mnist(L.LightningModule):
     def __init__(
         self,
         latent_dim: int = 100,
