@@ -24,7 +24,7 @@ It includes Jupyter notebooks with step-by-step implementations and reusable sou
       │   └── utils/                  
       │       └── visualization.py  
       │
-      ├── data/                    
+      ├── data???/                    
       │   ├── logo_sapienza.png     
       │   │── MNIST/                
       │   └── FashionMNIST  
