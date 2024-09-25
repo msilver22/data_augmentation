@@ -1,16 +1,10 @@
-# src/main.py
-
 import torch
 from torch.autograd import Variable
 import matplotlib.pyplot as plt
 import lightning as L
 from data_loader import MNISTDataModule, FashionMNISTDataModule  
-from utils.visualization import display_images
+from utils.visualization import display_images 
 
-from models.cgan import CGAN  
-from models.gan import Generator  
-
-# Define a function to choose the data module dynamically
 def choose_data_module(dataset_name):
     if dataset_name == 'mnist':
         return MNISTDataModule()
@@ -19,12 +13,21 @@ def choose_data_module(dataset_name):
     else:
         raise ValueError(f"Unknown dataset: {dataset_name}")
 
-# Define a function to choose the model dynamically
-def choose_model(model_name):
-    if model_name == 'cgan' :
-        return CGAN()
+def choose_model(model_name,dataset_name):
+    if model_name == 'gan' and dataset_name=='mnist':
+        from models.gan_mnist import GAN_mnist, Generator
+        return GAN_mnist()
+    elif model_name == 'gan' and dataset_name=='fmnist':
+        from models.gan_fashion_mnist import GAN_fmnist, Generator
+        return GAN_fmnist()
+    elif model_name == 'wgan' and dataset_name=='fmnist':
+        from models.wgan_fashion_mnist import WGAN_fmnist, Generator
+        return WGAN_fmnist()
+    elif model_name == 'cgan' and dataset_name=='mnist':
+        from models.cgan_mnist import CGAN_mnist, Generator
+        return CGAN_mnist()
     else:
-        raise ValueError(f"Unknown model: {model_name}")
+        raise ValueError(f"Unknown model or dataset: {model_name}, {dataset_name}")
 
 def main(model_name='cgan', dataset_name='mnist', latent_dim=100, epochs=70):
     # Load the chosen data module and model
