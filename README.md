@@ -23,7 +23,9 @@ It includes Jupyter notebooks with step-by-step implementations and reusable sou
       │   │   ├── vae_mnist.py 
       │   │   ├── vae_fashion_mnist.py 
       │   │   ├── cvae_mnist.py 
-      │   │   └── cvae_fashion_mnist.py           
+      │   │   └── cvae_fashion_mnist.py  
+      │   ├── main_gan.py/   
+      │   ├── main_vae.py/  
       │   └── utils/                  
       │       └── visualization.py  
       │
