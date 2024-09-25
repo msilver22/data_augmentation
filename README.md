@@ -5,7 +5,7 @@ It includes Jupyter notebooks with step-by-step implementations and reusable sou
 
 ## Repository Structure
 
-data_augmentation/
+data_augmentation/ 
 │
 ├── notebooks/                # Contains Jupyter notebooks
 │   ├── basic_image_augmentation_logo_sapienza.ipynb    # Basic image augmentation on Sapienza logo
