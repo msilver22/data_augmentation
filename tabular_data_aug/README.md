@@ -1,6 +1,8 @@
 # Tabular Data Augmentation
 
-In this repository we share several techniques that have been used to augment the minority class of the following dataset
+In this repository, we share several techniques that have been used to augment the minority class of a medical dataset.
+This dataset is part of a research project of Sant'Andrea Hospital about predicting Gastric Neoplastic Lesions in patients with Gastric Atrophy.
+
 
 | Group | Number of Patients | Description                                  |
 |-------|--------------------|----------------------------------------------|
