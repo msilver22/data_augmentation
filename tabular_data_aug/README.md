@@ -11,7 +11,7 @@ This dataset is part of a research project of Sant'Andrea Hospital about predict
 
 
 ## Original data
-
+For categorical variables, we show the frequency of each class. For numerical variables, we scatter plot their values.
 ![Original](https://github.com/msilver22/data_augmentation/blob/56939602ad8cb0b3d98a671c493d1129830ac581/tabular_data_aug/images/original_data.png)
 
 ### Classification on real data
@@ -27,6 +27,8 @@ This dataset is part of a research project of Sant'Andrea Hospital about predict
 | MLP        | 0.78     | 0.23     |
 
 ## Minority-class Augmentation
+We train the models on the whole minority class. Here we compare generated data (220 samples) and real data (22 samples).
+
 ### SMOTE
 ![SMOTE](https://github.com/msilver22/data_augmentation/blob/835e4665a2565a8c23d9ff478531074646adc40c/tabular_data_aug/images/smote_minority.png)
 ### CT-GAN
