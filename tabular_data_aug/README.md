@@ -13,3 +13,17 @@ This dataset is part of a research project of Sant'Andrea Hospital about predict
 ## Original data
 
 ![Original](https://github.com/msilver22/data_augmentation/blob/56939602ad8cb0b3d98a671c493d1129830ac581/tabular_data_aug/images/original_data.png)
+
+### Classification on real-data
+
+#### Dataset partition
+| Group | Training set | Test set |
+|-------|--------------|----------|
+| 1     | 208          | 89       |
+| 2     | 15           | 7        |
+#### Evaluations
+| Classifier | Accuracy | F1 Score |
+|------------|----------|----------|
+| FC         | 0.78     | 0.23     |
+
+
