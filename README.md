@@ -54,6 +54,28 @@ In addition, in the folder *"tabular_data_aug"* we explore several augmentation 
       └── requirements.txt                 
 
 ## MNIST experiment
-
+### GAN
 ![GAN](https://github.com/msilver22/data_augmentation/blob/449db8b1605d55e2e6bbd3822b8ca696557bcbea/photos/gan/mode_collapse.png)
+### CGAN
+![CGAN](https://github.com/msilver22/data_augmentation/blob/4a3547ce97160eb7e9127af8139641012bfcc971/photos/cgan/cgan_mnist.png)
+### VAE
+![VAE](https://github.com/msilver22/data_augmentation/blob/4a3547ce97160eb7e9127af8139641012bfcc971/photos/vae/vae_mnist.png)
+### CVAE 
+![CVAE](https://github.com/msilver22/data_augmentation/blob/4a3547ce97160eb7e9127af8139641012bfcc971/photos/vae/cvae_mnist.png)
+
+## FashionMNIST experiment
+### GAN
+![GAN](https://github.com/msilver22/data_augmentation/blob/4a3547ce97160eb7e9127af8139641012bfcc971/photos/gan/gan_fmnist.png)
+### WGAN
+![WGAN](https://github.com/msilver22/data_augmentation/blob/4a3547ce97160eb7e9127af8139641012bfcc971/photos/wgan/wgan.png)
+### CGAN
+![CGAN](https://github.com/msilver22/data_augmentation/blob/4a3547ce97160eb7e9127af8139641012bfcc971/photos/cgan/cgan_fmnist.png)
+### VAE
+![VAE](https://github.com/msilver22/data_augmentation/blob/4a3547ce97160eb7e9127af8139641012bfcc971/photos/vae/vae_fmnist.png)
+### CVAE
+![CVAE](https://github.com/msilver22/data_augmentation/blob/4a3547ce97160eb7e9127af8139641012bfcc971/photos/vae/cvae_fmnist.png)
+
+
+
+
 
