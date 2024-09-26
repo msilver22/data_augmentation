@@ -14,7 +14,7 @@ This dataset is part of a research project of Sant'Andrea Hospital about predict
 
 ![Original](https://github.com/msilver22/data_augmentation/blob/56939602ad8cb0b3d98a671c493d1129830ac581/tabular_data_aug/images/original_data.png)
 
-### Classification on real-data
+### Classification on real data
 
 #### Dataset partition
 | Group | Training set | Test set |
@@ -35,5 +35,24 @@ This dataset is part of a research project of Sant'Andrea Hospital about predict
 ![TVAE](https://github.com/msilver22/data_augmentation/blob/65bac066725f34528d0f5f53f1b84254effb2cf6/tabular_data_aug/images/tvae_minority.png)
 ### GReaT
 ![GREAT](https://github.com/msilver22/data_augmentation/blob/d62c7d92c80e560e740c5ae4b3e0cfea1cb2337b/tabular_data_aug/images/great_minority.png)
+
+### Classification on augmented data
+#### Dataset partition
+| Group | Training set | Test set |
+|-------|--------------|----------|
+| 1     | 208          | 89       |
+| 2     | 176          | 7        |
+#### Evaluations
+| Augmentation | Accuracy | F1 Score |
+|--------------|----------|----------|
+| None         | 0.78     | 0.23     |
+| SMOTE        | 0.74     | 0.14     |
+| CT-GAN       | 0.71     | 0.23     |
+| T-VAE        | **0.86** | 0.29     |
+| GReaT        | 0.81     | **0.3**  |
+
+
+
+
 
 
