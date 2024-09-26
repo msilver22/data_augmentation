@@ -26,4 +26,14 @@ This dataset is part of a research project of Sant'Andrea Hospital about predict
 |------------|----------|----------|
 | FC         | 0.78     | 0.23     |
 
+## Minority-class Augmentation
+### SMOTE
+![SMOTE](https://github.com/msilver22/data_augmentation/blob/835e4665a2565a8c23d9ff478531074646adc40c/tabular_data_aug/images/smote_minority.png)
+### CT-GAN
+![CTGAN](https://github.com/msilver22/data_augmentation/blob/490999b4720a7ee8e7adb642da641d11df31592f/tabular_data_aug/images/ctgan_minority.png)
+### T-VAE
+![TVAE](https://github.com/msilver22/data_augmentation/blob/65bac066725f34528d0f5f53f1b84254effb2cf6/tabular_data_aug/images/tvae_minority.png)
+### GReaT
+![GREAT](https://github.com/msilver22/data_augmentation/blob/d62c7d92c80e560e740c5ae4b3e0cfea1cb2337b/tabular_data_aug/images/great_minority.png)
+
 
