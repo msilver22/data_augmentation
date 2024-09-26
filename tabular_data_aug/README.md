@@ -41,6 +41,7 @@ We train the models on the whole minority class. Here we compare generated data 
 ![GREAT](https://github.com/msilver22/data_augmentation/blob/d62c7d92c80e560e740c5ae4b3e0cfea1cb2337b/tabular_data_aug/images/great_minority.png)
 
 ### Classification on augmented data
+We train the models only on training samples of the minority-class, in order to obtain a more balanced dataset (161 synthetic samples).
 #### Dataset partition
 | Group | Training set | Test set |
 |-------|--------------|----------|
