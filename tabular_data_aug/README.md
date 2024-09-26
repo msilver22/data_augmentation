@@ -24,7 +24,7 @@ This dataset is part of a research project of Sant'Andrea Hospital about predict
 #### Evaluations
 | Classifier | Accuracy | F1 Score |
 |------------|----------|----------|
-| FC         | 0.78     | 0.23     |
+| MLP        | 0.78     | 0.23     |
 
 ## Minority-class Augmentation
 ### SMOTE
