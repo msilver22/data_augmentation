@@ -48,8 +48,7 @@ In addition, in the folder *"tabular_data_aug"* we explore several augmentation 
       │   │   ├── main_TVAE.py 
       │   │   └── main_GREAT.py  
       │   └── README.md  
-      │
-      ├── .gitignore                
+      │              
       ├── README.md                 
       └── requirements.txt                 
 
