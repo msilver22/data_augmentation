@@ -55,5 +55,5 @@ In addition, in the folder *"tabular_data_aug"* we explore several augmentation 
 
 ## MNIST experiment
 
-![GAN]([percorso-dell-immagine](https://github.com/msilver22/data_augmentation/blob/449db8b1605d55e2e6bbd3822b8ca696557bcbea/photos/gan/mode_collapse.png))
+![GAN]([https://github.com/msilver22/data_augmentation/blob/449db8b1605d55e2e6bbd3822b8ca696557bcbea/photos/gan/mode_collapse.png])
 
